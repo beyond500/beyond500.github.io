@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+html {
+	font-size:100%;
+}
+body {
+	font:normal 12px "애플고딕", AppleGothic, "돋움", dotum, Arial, Verdana, sans-serif; 
+	line-height:1.3;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+	font-family: 'Merriweather', serif;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+img {border:none;}
+ul, ol {
+	list-style:none;
+}
+a:link, a:visited {
+	color: #666666;
+	text-decoration:none;
+}
+a:hover {
+	color: #666666;
+	text-decoration:underline;
+}
+
+
+
+/* common modul */
+
+.fix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+strong {font-family: 'Merriweather', serif;}
+em {font-family: 'Source Sans Pro', sans-serif;}
+p  {font-family: 'Source Sans Pro', sans-serif;}
+
+
+
+
+/* header */
+header {position: relative; height: 60px; margin: 11px 24px 0}
+header > a {position: absolute; top: 11px;left: 0;}
+header > div > h1 {float:left; width:15%; box-sizing: border-box;}
+header > .nav_list {margin: 0 auto; max-width:1024px; padding:0 46px;}
+nav > ul {float:left; width:65%; padding-top: 11px; text-align: justify;}
+nav > ul:after {content:''; width:100%; display:inline-block;}
+nav > ul > li {display: inline-block;}
+header > div.Search {position: absolute; right: 0; top: 12px;}
+header > div.Search > a > img {vertical-align: top; margin: -1px 0 0 20px;}
+
+/*aside*/
+aside {margin: 0 20px;position: relative;}
+aside > a > picture img {width: 100%; height: auto;} /* picture 태그속 img에 직접 width,height 넣는다*/
+.slogan {position: absolute; bottom: 30px ; left: 0; right: 0; margin: 0 auto; max-width: 1024px;} /* 내 방법 */
+/* .slogan {position: absolute; bottom: 30px ; max-width: 1024px; width: 100%; left: 50%; transform: translateX(-50%);} 강사님 방법 */
+.slogan > a {color: white;}
+.slogan > a > h4 {padding-left: 34px; font-weight: 500;margin-bottom: 15px;}
+.slogan > a > h4::before {content: ''; display: inline-block; border: 1px solid red; width: 20px; position: absolute; top: 5px; left: 0;}
+.slogan > a > p {font-size: 38px;}
+.slogan > a > p > span {display: block}
+
+/* main */
+main {margin-top: -232px; padding-top: 232px;background-color: #ebebed; ;width: 100%}
+.contents {padding: 0 40px; text-align: center; }
+.contents > .contents_Search {margin: 30px auto; position: relative; max-width: 1002px; width: 100%;left: 0;right: 0;}
+.contents .contents_Search::before {position: absolute; display: block; content: ''; width: 17.864271%; border: 1px solid #d6d7db;left: 0; top: 40px;}
+.contents .contents_Search::after {position: absolute; display: block; content: ''; width: 17.864271%; border: 1px solid #d6d7db;right: 0; top: 40px; }
+.contents > .contents_Search > div {width: 52.894211%; height: 80px;margin: 0 auto; background-color: white;}
+.contents > .contents_Search > div > input {width: 70% ;min-height: 25%; padding: 0 7%; margin-top:30px;  border:none;}
+.contents > .contents_Search > div > img {vertical-align: top;margin-top: 33px; }
+.contents > .contents_doing {max-width: 996px; width: calc(100% - 10px); margin: 0 auto;position: relative;}
+.contents > .contents_doing > div {height: 464px; width: 65%; float: left;background-color: white;}
+.contents > .contents_doing > div:nth-child(odd) {margin-right: 10px;}
+.contents > .contents_doing > div:hover {box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+.contents > .contents_doing > div picture img {width: 100%; margin-bottom: 40px; height: auto;}
+.contents > .contents_doing > div p {font-size: 28px;}
+.contents > .contents_doing > div h4 {position: relative;width: 133px; padding-left: 25px;left: 0; right: 0;margin: 0 auto 5px;}
+.contents > .contents_doing > div > h4::before {position: absolute; left: 0; top: 4px; display: block; content: ''; width: 20px; border: 1px solid red}
+.contents > .contents_doing > .do_vip {float: right; width: 33.032128%; }
+.contents > .contents_doing > .do_vip > p {font-size: 20px;}
+.contents > .contents_doing > .do_vp {height: auto; width: calc(33.032128% - 52px); margin-top: 10px; text-align: left; background: #29333f; padding: 57px 26px; color: white;}
+.contents > .contents_doing > .do_vp > svg {width: 15px; height: 15px;margin-right: 25px}
+.contents > .contents_doing > .do_vp > svg > path {fill:#48bcff}
+.contents > .contents_doing > .do_vp > p {font-size: 17px; margin: 62px 0 54px; line-height: 30px; }
+.contents > .contents_doing > .do_now {height: 100%; float: right; margin-top: 10px;}
+
+.contents > .contents_history {width: 100%; margin: 96px auto 197px; position: relative; max-width: 996px; }
+.contents > .contents_history > .history_info {float: left; text-align: left; width: 42%; padding-top: 20px;}
+.contents > .contents_history > .history_info > * {display: block;}
+.contents > .contents_history > .history_info > span {font-size: 20px;font-family: 'Merriweather', serif;}
+.contents > .contents_history > .history_info > strong {font-size: 30px}
+.contents > .contents_history > .history_info > p {font-size: 17px; padding: 40px 0 30px;}
+.contents > .contents_history > .history_info > ul > li {position: relative;padding-left: 33px;font-weight: bold;font-family: 'Source Sans Pro', sans-serif;font-size: 13px;}
+.contents > .contents_history > .history_info > ul > li + li {margin-top: 20px; }
+.contents > .contents_history > .history_info > ul > li::before {position: absolute; left: 0; top: 7px; display: block; content: ''; width: 18px; border: 1px solid red }
+.contents > .contents_history > .history_img {float: right; }
+.contents > .contents_history > .history_img > picture > img {margin-right: 43px; vertical-align: top;border: 1px solid white; }
+.contents > .contents_history > .history_img > picture:last-child > img {position: absolute;right: 0;bottom: -92px;margin-right: 0;}
+.bottom {position: relative;}
+.bottom > img {width: 100%;vertical-align: top;}
+.bottom > .module {max-width: 598px; width: 96.515679%; height: auto; position: absolute; bottom: -111px; left: 0; right: 0; margin: 0 auto;padding: 4px; background: #c39e72;}
+.bottom > .module > div {border: 1px solid white;text-align: center;padding: 40px 0;color: white;}
+.bottom > .module > div > strong {display: block;font-size: 28px;margin-bottom: 30px;}
+.bottom > .module > div > input {border: none; max-width: 350px; width: 58.528428%; height: 63px; padding: 0 25px;font-family: 'Source Sans Pro', serif; font-weight: bold; font-size: 15px;}
+.bottom > .module > div > button {border: 1px solid white; max-width: 90px; width: 15.050167%; height: 63px;background: #c6aa85;font-family: 'Source Sans Pro', serif; font-weight: bold; font-size: 15px;}
+.bottom > .module > div > button:hover {background: #c39e72;}
+
+/* footer */
+footer {padding-top: 111px; text-align: center;background: #343c49;}
+footer > * {display: block;}
+footer > img {margin: 47px auto 30px}
+footer > h6 {font-size: 20px;}
+footer > strong {font-size: 15px; margin: 15px 0 30px; color: #c39e72;  
+	position: relative; width: 70.270270%; left: 50%; transform: translateX(-50%) ;overflow: hidden;} /*letter spacing 하면 가운데정렬 안맞음*/
+footer > strong::before {position: absolute; display: block; content: ''; width: 75px; border: 1px solid #5c666f;left: 50%; top: 8px;transform: translateX(-124px)}
+footer > strong::after {position: absolute; display: block; content: ''; width: 75px; border: 1px solid #5c666f;right: 50%;  top: 8px; transform: translateX(124px)}
+footer > strong > span.star {margin: 0 15px;} /* italic체 변경하려면 font-style: normal;*/
+footer > ul.footer_nav {margin: 0 auto 50px; font-size:0; width: 600px; text-align: justify;}/*왜 text-align이 안듣는지*/ /* nav 외우기 font-size:0 한 이유는 footer > ul.footer_nav:after가 공간을 가져서 크기를 없애기 위함; text-align 사용하려면 inline-block로 변경*/
+footer > ul.footer_nav:after {content:''; display: inline-block; width:100%;}
+footer > ul.footer_nav > li {font-size:12px; display: inline-block} 
+footer > ul.footer_nav > li > a {color: white} /*컬러는 가장 안쪽의 태그에 해야 한다.*/
+footer > .footer_bottom {height: 78px;background: #283140;font-size: 0}
+footer > .footer_bottom > img {margin-top: 26px;}
+footer > .footer_bottom > img + img {margin-left: 39px}
+
+
+
+/* ~399px */
+
+@media screen and (max-width:399px) 	{
+	.slogan {position: absolute; bottom: 30px ; max-width: 91.103202%; margin: 0 0 0 40px;}
+	.slogan > a > p > span {display: inline}
+
+
+	.wrap {margin-top: 56px}
+	header {padding: 11px 0 13px; height: auto;position: fixed;width: 100%;z-index: 100; margin: 0;background: white;top: 0}
+	header > a {top: 15px; left: 20px;}
+	header > .nav_list > nav {display: none}
+	header > .nav_list > h1 {float: none; margin: 0 auto; width: 69px;}
+	header > .nav_list > h1 img {vertical-align: top;}
+	header > div.Search {top: 20px; right: 20px;}
+
+	.contents > .contents_history {width: 100%; position: static; max-width: 100%;}
+	.contents > .contents_history > .history_info {float: none; text-align: center; width: 100%; padding-top: 20px;margin-bottom: 75px;}
+	.contents > .contents_history > .history_info > * {display: inline-block;}
+	.contents > .contents_history > .history_info > span {display: block;}
+	.contents > .contents_history > .history_info > ul > li {display: inline-block;}
+	.contents > .contents_history > .history_info > ul > li:nth-child(2) {display: block;}
+	.contents > .contents_history > .history_img {float: none; position: relative; text-align: center;display: inline-block}
+	.contents > .contents_history > .history_img > picture > img {margin: 0;}
+	.contents > .contents_history > .history_img > picture:last-child > img {position: absolute;right: -70px;bottom: -86px;}
+
+	footer > ul.footer_nav {text-align: center;width: 100%}
+	footer > ul.footer_nav > li {display: block;}
+	footer > ul.footer_nav > li + li {margin-top: 30px;}
+	
+
+	header > div.Search > a > span {display: none;}
+	.contents .contents_Search::before {display: none;}
+	.contents .contents_Search::after {display: none;}
+	.contents > .contents_Search > div {width: 100%}
+	
+	.contents > .contents_doing > div {float: none; width: 100%; height: 100%;padding-bottom: 25px;}
+	.contents > .contents_doing > div.do_vp {float: none;width: calc(100% - 90px); height: calc(100% - 180px);		padding: 90px 45px;}
+	.contents > .contents_doing > div.do_vip {float: none;width: 100%;}
+	.contents > .contents_doing > div.do_now {float: none;height: 100%;}
+	.contents > .contents_doing > div > picture > img {margin-bottom: 30px;}
+	.contents > .contents_doing > div > p {width: 70%; margin: 0 auto;}
+	.contents > .contents_doing > div.do_vp > p {margin: 60px 0 50px;width: 100%}
+	.contents > .contents_history > .history_img {width: 74.915254%; }
+	.contents > .contents_history > .history_img > picture > img {width: 100% ; height: auto;}
+	.contents > .contents_history > .history_img > picture:last-child > img {width: 56.561085%; right: -15.837104%;bottom: -29.054054%;}	
+
+	/* last추가 */
+
+}
+
+
+/* 400px~699px */
+@media screen and (min-width:400px) and (max-width:699px) 	{
+	.slogan {position: absolute; bottom: 30px ; max-width: 91.103202%; margin: 0 0 0 40px;}
+	.slogan > a > p > span {display: inline}
+
+
+	.wrap {margin-top: 56px}
+	header {padding: 11px 0 13px; height: auto;position: fixed;width: 100%;z-index: 100; margin: 0;background: white;top: 0}
+	header > a {top: 15px; left: 20px;}
+	header > .nav_list > nav {display: none}
+	header > .nav_list > h1 {float: none; margin: 0 auto; width: 69px;}
+	header > .nav_list > h1 img {vertical-align: top;}
+	header > div.Search {top: 20px; right: 20px;}
+
+	.contents > .contents_history {width: 100%; position: static; max-width: 100%;}
+	.contents > .contents_history > .history_info {float: none; text-align: center; width: 100%; padding-top: 20px;}
+	.contents > .contents_history > .history_info > * {display: inline-block;}
+	.contents > .contents_history > .history_info > span {display: block;}
+	.contents > .contents_history > .history_info > ul > li {display: inline-block;}
+	.contents > .contents_history > .history_info > ul > li:nth-child(2) {display: block;}
+	.contents > .contents_history > .history_img {float: none; position: relative; text-align: center;display: inline-block}
+	.contents > .contents_history > .history_img > picture > img {margin: 0;}
+	.contents > .contents_history > .history_img > picture:last-child > img {position: absolute;right: -70px;bottom: -86px;}
+
+	footer > ul.footer_nav {text-align: center;width: 100%}
+	footer > ul.footer_nav > li {display: block;}
+	footer > ul.footer_nav > li + li {margin-top: 30px;}
+	
+	/* 추가 */
+	header > div.Search > a > span {display: none;}
+	.contents .contents_Search::before {display: none;}
+	.contents .contents_Search::after {display: none;}
+	.contents > .contents_Search > div {width: 100%}
+	
+	.contents > .contents_doing > div {float: none; width: 100%; height: 100%;padding-bottom: 25px;}
+	.contents > .contents_doing > div.do_vp {float: none;width: calc(100% - 90px); height: calc(100% - 180px);		padding: 90px 45px;}
+	.contents > .contents_doing > div.do_vip {float: none;width: 100%;}
+	.contents > .contents_doing > div.do_now {float: none;height: 100%;}
+	.contents > .contents_doing > div > picture > img {margin-bottom: 30px;}
+	.contents > .contents_doing > div > p {width: 70%; margin: 0 auto;}
+	.contents > .contents_doing > div.do_vp > p {margin: 60px 0 50px;width: 100%}
+	.contents > .contents_history > .history_img {width: 74.915254%; }
+	.contents > .contents_history > .history_img > picture > img {width: 100% ; height: auto;}
+	.contents > .contents_history > .history_img > picture:last-child > img {width: 56.561085%; right: -15.837104%;bottom: -29.054054%;}	
+	
+
+}
+
+/* 700px~999px */
+@media screen and (min-width:700px) and (max-width:999px) 	{
+	.slogan {position: absolute; bottom: 30px ; max-width: 91.103202%; margin: 0 0 0 40px;}
+	.slogan > a > p > span {display: inline}
+
+	/* 추가 */
+	.wrap {margin-top: 56px}
+	header {padding: 11px 0 13px; height: auto;position: fixed;width: 100%;z-index: 100; margin: 0;background: white;top: 0}
+	header > a {top: 15px; left: 20px;}
+	header > .nav_list > nav {display: none}
+	header > .nav_list > h1 {float: none; margin: 0 auto; width: 69px;}
+	header > .nav_list > h1 img {vertical-align: top;}
+	header > div.Search {top: 20px; right: 20px;}
+
+	.contents > .contents_history {width: 100%; position: static; max-width: 100%;}
+	.contents > .contents_history > .history_info {float: none; text-align: center; width: 100%; padding-top: 20px;margin-bottom: 75px;}
+	.contents > .contents_history > .history_info > * {display: inline-block;}
+	.contents > .contents_history > .history_info > span {display: block;}
+	.contents > .contents_history > .history_info > ul > li {display: inline-block;}
+	.contents > .contents_history > .history_info > ul > li:nth-child(2) {display: block;}
+	.contents > .contents_history > .history_img {float: none; position: relative; text-align: center;display: inline-block}
+	.contents > .contents_history > .history_img > picture > img {margin: 0;}
+	.contents > .contents_history > .history_img > picture:last-child > img {position: absolute;right: -70px;bottom: -86px;}
+	
+}
+
+@media screen and (max-width:1163px) 	{
+	.slogan {position: absolute; bottom: 30px ; max-width: 91.103202%; margin: 0 0 0 40px;}
+	.slogan > a > p > span {display: inline}
+}
+
